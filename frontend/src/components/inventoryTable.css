@@ -1,0 +1,100 @@
+/* Estilos para la tabla de inventario */
+.inventory-table {
+  overflow-x: auto;
+}
+
+.inventory-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.inventory-table th {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+  background-color: #fff; /* Fondo blanco para las celdas */
+  color: #000; /* Texto negro */
+}
+.inventory-table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  background-color: #fff; /* Fondo blanco para las celdas */
+  color: #000; /* Texto negro */
+}
+
+.inventory-table th {
+  background-color: #f4f4f4;
+  color: #000; /* Texto negro para los encabezados */
+}
+
+.no-data {
+  text-align: center;
+  padding: 1rem;
+  color: #000; /* Texto negro */
+}
+
+.inventory-table tr {
+  height: auto; /* Ajusta la altura automáticamente */
+}
+
+.inventory-table td {
+  vertical-align: middle;
+}
+
+/* Estilos para los botones de acción en la tabla */
+.action-buttons {
+  display: flex;
+  flex-direction: column; /* Distribuye los botones verticalmente */
+  justify-content: space-around; /* Espacia los botones dentro de la celda */
+  align-items: center; /* Centra los botones horizontalmente */
+  height: 100%; /* Asegura que la altura ocupe toda la celda */
+}
+
+.action-buttons button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #007bff; /* Color de los íconos */
+}
+
+.action-buttons button:hover {
+  color: #0056b3; /* Color de los íconos al pasar el cursor */
+}
+
+/* Ajusta la celda de acciones para que use toda la altura disponible */
+.inventory-table td.action-buttons {
+  height: auto; /* Ajusta la altura automáticamente */
+  vertical-align: middle; /* Centra verticalmente el contenido */
+}
+
+/* Estilos para el modal */
+.modal-contrato {
+  flex: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 800px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  z-index: 1000;
+  box-sizing: border-box;
+  color: #000; /* Asegúrate de que el padding no afecte el tamaño */
+}
+
+.modal-overlay-contrato {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  color: #000;
+}

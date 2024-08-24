@@ -1,0 +1,19 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "myproject",
+  "outputfilename": "myproject",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "matias torres",
+    "email": "matias.torres1812@gmail.com"
+  },
+  "window": {
+    "width": 1920,
+    "height": 1080,
+    "fullscreen": true,
+    "title": "My Project"
+  }
+}

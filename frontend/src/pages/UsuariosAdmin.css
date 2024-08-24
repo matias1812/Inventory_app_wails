@@ -1,0 +1,106 @@
+/* Contenedor principal */
+.admin-container {
+  flex: 1;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background-color: #f4f4f4;
+  color: #000000; /* Letras negras */
+  width: 90%;  /* Hacer el contenedor más grande */
+  max-width: 800px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  margin-top: 15rem;
+}
+
+/* Título */
+.admin-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+/* Contenedor para la tabla con scroll horizontal */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto; /* Agregar scroll horizontal si es necesario */
+}
+
+.admin-container table {
+  width: 100%; /* La tabla ocupa el 100% del contenedor */
+  border-collapse: collapse;
+  min-width: 600px; /* Ajustar según sea necesario para forzar el scroll horizontal si la tabla es muy ancha */
+}
+
+.admin-container table th, .admin-container table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+  color: #000000; /* Letras negras */
+}
+
+.admin-container table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.admin-container table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.admin-container table tr:hover {
+  background-color: #ddd;
+}
+
+/* Botón Guardar */
+.admin-container button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-container button:hover {
+  background-color: #218838;
+}
+
+/* Botón Volver al Inventario */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.btn-informe {
+  background-color: #218838;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}

@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@reduxjs/toolkit": "^2.2.7",
+    "react-file-viewer": "^1.2.1",
+    "react-modal": "^3.16.1",
+    "react-redux": "^7.2.9",
+    "react-router-dom": "^6.26.1",
+    "redux": "^5.0.1",
+    "uuid": "^10.0.0"
+  }
+}

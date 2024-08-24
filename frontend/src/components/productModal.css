@@ -1,0 +1,163 @@
+/* Estilos del modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  color: black;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 95%;
+  max-width: 1100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.file-upload {
+  margin-right: 10px;
+}
+
+.file-upload label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.file-upload input[type="file"] {
+  display: block;
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+}
+
+.form-group input:last-child,
+.form-group select:last-child {
+  width: 13rem;
+  margin-right: 0; /* Eliminar margen del último elemento */
+}
+
+.product-title {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contract-info,
+.products-container {
+  max-height: calc(100vh - 500px);
+  overflow-y: auto;
+}
+
+.product-container {
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Estilos para el encabezado del producto */
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos del botón de eliminar producto */
+.remove-product-button {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.remove-product-button:hover {
+  background: #c82333;
+}
+
+.product-container h3 {
+  margin-top: 0;
+}
+
+.product-container .form-group {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0rem;
+}
+
+.product-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/* Botones */
+.add-product-button {
+  margin-top: 1rem;
+  padding: 12px 20px;
+  width: 100%;
+  max-width: 160px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: flex-end;
+}
+
+.submit-button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: flex-end;
+}

@@ -1,0 +1,26 @@
+.home-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.button-link {
+  text-decoration: none; 
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+.button-link:hover {
+  background-color: #0056b3;
+}
